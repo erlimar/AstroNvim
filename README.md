@@ -1,6 +1,6 @@
 # AstroNvim do Erlimar
 
-**NOTE:** This is for AstroNvim v4+
+**NOTA:** Requer AstroNvim v4+
 
 ![](assets/my_astronvim_screen.png)
 
@@ -18,7 +18,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 #### Clone este repositório
 
 ```shell
-git clone https://github.com/erlimar/astronvim_config ~/.config/nvim
+git clone https://github.com/erlimar/AstroNvim ~/.config/nvim
 ```
 
 #### Inicie o Neovim
