@@ -17,6 +17,7 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
 ```pwsh
+# PowerShell
 mv $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 mv $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 ```
@@ -24,10 +25,12 @@ mv $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 #### Clone este repositório
 
 ```sh
+# Shell
 git clone https://github.com/erlimar/AstroNvim ~/.config/nvim
 ```
 
 ```pwsh
+# PowerShell
 git clone https://github.com/erlimar/AstroNvim $env:LOCALAPPDATA/nvim
 ```
 
