@@ -6,6 +6,10 @@
 
 ## 🛠️ Installation
 
+#### Instale os pré-requisitos sugeridos pelo AstroNvim
+
+> https://docs.astronvim.com/#-requirements)
+
 #### Faça o backup de sua configuração nvim atual
 
 ```sh
