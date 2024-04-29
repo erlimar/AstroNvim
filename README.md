@@ -8,21 +8,31 @@
 
 #### Faça o backup de sua configuração nvim atual
 
-```shell
+```sh
+# Shell
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
+```pwsh
+mv $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+mv $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+```
+
 #### Clone este repositório
 
-```shell
+```sh
 git clone https://github.com/erlimar/AstroNvim ~/.config/nvim
+```
+
+```pwsh
+git clone https://github.com/erlimar/AstroNvim $env:LOCALAPPDATA/nvim
 ```
 
 #### Inicie o Neovim
 
-```shell
+```sh
 nvim
 ```
