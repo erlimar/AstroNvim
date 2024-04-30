@@ -15,5 +15,16 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- Usa PowerShell como shell padrão se estiver disponível
+if vim.fn.executable "pwsh" == 1 then
+  vim.opt.shell = "pwsh"
+  vim.opt.shellcmdflag =
+    "-NoLogo -NoProfile -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
+  vim.opt.shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait"
+  vim.opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
+  vim.opt.shellquote = ""
+  vim.opt.shellxquote = ""
+end
+
 require "lazy_setup"
 require "polish"
